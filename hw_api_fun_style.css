@@ -1,0 +1,61 @@
+html
+{
+    background-color: #ddeeff;
+}
+
+header
+{
+    font-size: 15px;
+}
+
+main
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+#Filter
+{
+    color: #009000;
+    width: 100%;
+}
+
+input
+{
+    width: 250px;
+    text-align: center;
+    font-size: 20px;
+    height: 30px;
+}
+
+#data_here
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+div
+{
+    color: #0000ff;
+    display: block;
+    border-style: double;
+    border-width: 5px;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 88%;
+    border-color: #ff0000;
+    padding: 10px 0px;
+}
+
+footer
+{
+    color: #009000;
+    margin-top: 100px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    width: 63%;
+}

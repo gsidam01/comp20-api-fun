@@ -1,0 +1,49 @@
+<!-- /*
+ * George Sidamon-Eristoff 
+ * 6 April 2020
+ * Tufts Comp20 Spring 2020
+ * Homework 10 - API Fun!
+ */ -->
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>George Sidamon-Eristoff - API Fun!</title>
+    <link rel="stylesheet" type="text/css" href="hw_api_fun_style.css" />
+    <script type="text/javascript" language="javascript" src="./hw_api_fun_js.js"></script>
+</head>
+<body>
+    <header>
+        George Sidamon-Eristoff<br />
+        6 April 2020<br />
+        Tufts Comp20 Spring 2020<br />
+        Homework 10 - API Fun!<br />
+    </header>
+    <main>
+        <h3>Please use the input boxes to see if there was a rocket launched on a particular date!</h3>
+        <h6>In the case of invalid input, the page will either not refresh, or indicate no launches.</h6>
+        <article id="Filter">
+            <form>
+                <label for="day">Day: </label>
+                <input type="number" id="day" name="day" min="1" max="31" placeholder="Select a Day"><br />
+                <label for="month">Month: </label>
+                <input type="number" id="month" name="month" min="1" max="12" placeholder="Select a Month"><br />
+                <label for="year">Year: </label>
+                <input type="number" id="year" name="year" min="1955" max="2020" placeholder="Select a Year"><br />
+                <input type="button" value="Check Launches" onclick="check_date()" id="date"/>
+                <input type="button" value="Check Today" onclick="check_today()" id="today"/>
+
+            </form>
+        </article>
+
+        <article id="data_here">
+        </article>
+    </main>
+    <footer>
+        Try: 27 August 2015, 16 July 1969, or 9 Auguts 2010 if you need some ideas for dates!<br /><br />
+        I used Launch Library's <a href="https://launchlibrary.net/#">(link)</a> API of historical rocket launches as my data source.  It returns details of launches on a particular day, including, but not limited to: the model of rocket launched, the launch pad location, and the agencies or companies responsible for the launch.  I found this API through APIlist.fun <a href="https://apilist.fun/api/launch-library">(link)</a>.  I take the user's inputted day, month, and year and insert them into the following URL template for each API request: https://launchlibrary.net/1.3/launch/YYYY-MM-DD/YYYY-MM-DD.  Additionally, I give the user another option, to check today's launches.  This creates an API request that uses the same URL but does not necessitate user input.  This API could be helpful for an avid fan of rockets to keep track of new launches, or computer scientists and mathematicians who need to know launch locations and rocket types to model flight paths of rockets.
+    </footer>
+</body>
+</html>
+
